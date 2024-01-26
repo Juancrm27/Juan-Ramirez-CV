@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+
+    <meta charset="UTF-8"/>
+    <title>Juan Ramirez</title>
+    <meta name="description" content="Eritis sicut Deus, scientes bonum et malum."/>
+
+    <meta itemprop="name" content="Juan Ramirez"/>
+    <meta itemprop="description" content="Eritis sicut Deus, scientes bonum et malum."/>
+    <meta itemprop="image" content=""/>
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@juancrm__"/>
+    <meta name="twitter:creator" content="@juancrm__"/>
+    <meta name="twitter:title" content="Juan Ramirez"/>
+    <meta name="twitter:description" content="Eritis sicut Deus, scientes bonum et malum."/>
+    <meta name="twitter:image" content=""/>
+
+    
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="icon" href="/src/assets/icon.png" />
+
+    
+    <link rel="stylesheet" href="/src/works.css" />
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    
+    
+<script>
+  $(document).ready(function () {
+    $('.more-images-btn').click(function () {
+      var additionalImagesContainer = $(this).closest('.card').find('.additional-images');
+      additionalImagesContainer.slideToggle();
+      var buttonText = additionalImagesContainer.is(':visible') ? 'More Images' : 'More Images';
+      $(this).text(buttonText);
+      $(this).closest('.card').css('height', '');
+    });
+
+    $('.additional-images img').click(function () {
+      var imageUrl = $(this).attr('src');
+      openPopup(imageUrl);
+    });
+
+    $('body').on('click', '.close-popup-btn', function () {
+      closePopup();
+    });
+
+    $('body').on('click', '.popup-container', function (e) {
+      if ($(e.target).hasClass('popup-container') || $(e.target).hasClass('popup-content')) {
+        closePopup();
+      }
+    });
+
+    function openPopup(imageSrc) {
+      var popupHtml = '<div class="popup-container"><div class="popup-content"><img src="' + imageSrc + '" alt="Popup Image"><button class="close-popup-btn">X</button></div></div>';
+      $('body').append(popupHtml);
+    }
+
+    function closePopup() {
+      $('.popup-container').remove();
+    }
+  });
+</script>
+
+
+
+
+  </head>
+  <body>
+    
+    
+  <header>
+    
+    <a  href="index.html" class="logo">
+      <img src="/src/assets/negro_logo.svg" alt="logo" class="logo-img">
+      
+      <h2 class="logo-nombre">Juan Ramirez</h2>
+      <h3 style="font-weight: lighter; margin-left: 8px;" >/ Works </h3>
+    </a>
+    
+    <nav  class="secciones">
+      
+      <a href="https://www.instagram.com/juancrm__/" target="_blank" class="links">Instagram |</a>
+      
+      <a href="https://twitter.com/juancrm__" target="_blank" class="links">Twitter |</a>
+      
+      <a href="https://www.linkedin.com/in/juancrm/" target="_blank" class="links">Linkedin |</a>
+      
+      <a href="mailto:juancrm.dg@gmail.com" target="_blank" class="links">Contacto |</a>
+      
+      <a href="/index.html" class="trabajos">Back ➜</a> 
+      
+    </nav>
+    
+    <nav  class="back">
+      
+      <a href="/index.html" class="links">Back ➜</a>
+    
+    </nav>
+      
+      
+      
+      
+  </header>  
+    
+  
+   
+
+    <div class="card-container">
+      
+      
+      
+    <!-- 3DARCOMEDY-->
+      <div class="card">
+        
+        <div class="card-content">
+        
+        <div class="titulocard">
+          
+          <a href="https://youtu.be/N_mNZ48kYqA?t=228" class="tituloproyecto" >Comedy Night Market</a>
+          <a href="" class="btn">VR</a>
+          
+        </div>
+        
+        <br>
+        <p>Learn how Meta Horizon Worlds presents a unique opportunity for developers to enhance the experience of entertainment using VR technology. Join experts from Developer Studios as they discuss the advantages, challenges, trends and strategies for building immersive experiences in collaboration with the entertainment industry. </p>
+        
+        <p class="hashtag">#3Dar #Unity #Figma #UI #VR</p>
+          
+        </div>
+        
+        <img src="/src/assets/comedy_night_market/comedy-night-market.gif" alt="GIF de Horizon World"> 
+      
+        <!-- Agrega el botón dentro de la tarjeta -->
+        <button class="more-images-btn">More Images</button>
+        
+        <!-- Agrega un contenedor para las imágenes adicionales (puedes ocultarlo por defecto) -->
+        <div class="additional-images" style="display: none;">
+        <!-- Aquí coloca las imágenes adicionales -->
+        <img src="/src/assets/comedy_night_market/Horizon World_3.jpg" alt="Additional Image 1" style="width: 30%; margin-right: -20px;">
+        <img src="/src/assets/comedy_night_market/Horizon World_2.jpg" alt="Additional Image 2" style="width: 30%; margin-right: -20px;">
+        <img src="/src/assets/comedy_night_market/Horizon World_1.jpg" alt="Additional Image 3" style="width: 30%; margin-right: -20px;">
+        <img src="/src/assets/comedy_night_market/Horizon World_5.jpg" alt="Additional Image 4" style="width: 30%; margin-right: -20px;">
+        <img src="/src/assets/comedy_night_market/Horizon World_6.jpg" alt="Additional Image 5" style="width: 30%; margin-right: -20px;">
+        <!-- ... más imágenes ... -->
+        </div> 
+        
+       </div>
+      
+      
+      
+      
+      <!-- SARKANY-->
+      <div class="card">
+        
+          <div class="card-content">
+
+          <div class="titulocard">
+
+            <a href="https://www.instagram.com/reel/CxJikhErQxf/?igsh=MW01YnBhN2Y3N2E4Ng%3D%3D" class="tituloproyecto" >SS24 My Own Wave Sarkany | Night</a>
+            <a href="" class="btn">VIDEO 3D</a>
+
+          </div>
+
+          <br>
+          <p>In collaboration with Sarkany, I led the production of an innovative video using chroma key. In this process, we digitally replaced the green screen with a virtual environment and metallic liquid animations.</p>
+
+          <p class="hashtag">#Freelance #Blender</p>
+
+          </div>
+
+          <video width="50%" height="auto" style="margin-left:15px;" controls poster="/src/assets/sarkany/sarkany_noche.jpg" controls>
+          <source src="/src/assets/sarkany/sarkany_noche.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        
+          <br>
+        
+          <!-- Agrega el botón dentro de la tarjeta -->
+          <button class="more-images-btn">More Images</button>
+
+          <!-- Agrega un contenedor para las imágenes adicionales (puedes ocultarlo por defecto) -->
+          <div class="additional-images" style="display: none;">
+          <!-- Aquí coloca las imágenes adicionales -->
+          <img src="https://cdn.glitch.global/afe710b0-fea5-4b58-94c5-6810aff501a8/Horizon%20World_3.png?v=1705521109149" alt="Additional Image 1" style="width: 30%; margin-right: -20px;">
+          <img src="https://cdn.glitch.global/afe710b0-fea5-4b58-94c5-6810aff501a8/Horizon%20World_4.png?v=1705521109918" alt="Additional Image 2" style="width: 30%; margin-right: -20px;">
+          <img src="https://cdn.glitch.global/afe710b0-fea5-4b58-94c5-6810aff501a8/Horizon%20World_2.png?v=1705521108511" alt="Additional Image 3" style="width: 30%; margin-right: -20px;">
+
+          <!-- ... más imágenes ... -->
+          </div> 
+        
+        </div>
+      
+      <!-- CARD3-->
+      <div class="card">
+        
+        <div class="card-content">
+        
+        <div class="titulocard">
+          
+          <a href="https://www.instagram.com/reel/CxJikhErQxf/?igsh=MW01YnBhN2Y3N2E4Ng%3D%3D" class="tituloproyecto" >SS24 My Own Wave Sarkany | Day</a>
+          <a href="" class="btn">VIDEO 3D</a>
+          
+        </div>
+        
+        <br>
+        <p>In collaboration with Sarkany, I led the production of an innovative video using chroma key. In this process, we digitally replaced the green screen with a virtual environment and metallic liquid animations.</p>
+        
+        <p class="hashtag">#Freelance #Blender</p>
+          
+        </div>
+      
+        <video width="50%" height="auto" style="margin-left:15px;" controls poster="/src/assets/sarkany/sarkany_dia.jpg" controls>
+          <source src="/src/assets/sarkany/sarkany_dia.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        
+       </div>
+      
+      
+       <!-- CARD4-->
+      <div class="card">
+        
+        <div class="card-content">
+        
+        <div class="titulocard">
+          
+          <a href="https://21-iatu-web3d-develop.netlify.app/" class="tituloproyecto" >Financial Education for Itau Bank</a>
+          <a href="" class="btn">WEB 3D</a>
+          
+        </div>
+        
+        <br>
+        <p>I contributed to the development of an interactive 3D page for financial education, featuring trivia-based sections on Inflation, Savings, and Investments. My role focused on designing the immersive environment and creating 3D objects. This platform combines engaging 3D design with essential financial content to provide users with a unique and effective learning experience. </p>
+ 
+        <p class="hashtag">#21Studio #Threejs #Blender #Figma #UI</p>
+
+          
+        </div>
+      
+        <img src="https://cdn.glitch.global/afe710b0-fea5-4b58-94c5-6810aff501a8/card_1.png?v=1705540385693">
+       
+          <!-- Agrega el botón dentro de la tarjeta -->
+          <button class="more-images-btn">More Images</button>
+
+          <!-- Agrega un contenedor para las imágenes adicionales (puedes ocultarlo por defecto) -->
+          <div class="additional-images" style="display: none;">
+          <!-- Aquí coloca las imágenes adicionales -->
+          <img src="https://cdn.glitch.global/afe710b0-fea5-4b58-94c5-6810aff501a8/Horizon%20World_3.png?v=1705521109149" alt="Additional Image 1" style="width: 30%; margin-right: -20px;">
+          <img src="https://cdn.glitch.global/afe710b0-fea5-4b58-94c5-6810aff501a8/Horizon%20World_4.png?v=1705521109918" alt="Additional Image 2" style="width: 30%; margin-right: -20px;">
+          <img src="https://cdn.glitch.global/afe710b0-fea5-4b58-94c5-6810aff501a8/Horizon%20World_2.png?v=1705521108511" alt="Additional Image 3" style="width: 30%; margin-right: -20px;">
+
+          <!-- ... más imágenes ... -->
+          </div> 
+
+
+       </div>
+       
+      
+      <!-- CARD5-->
+      <div class="card">
+        
+        <div class="card-content">
+        
+        <div class="titulocard">
+          
+          <a href="https://www.instagram.com/p/Cxd3f5LOuii" class="tituloproyecto" >Join Our Future by Sofia</a>
+          <a href="" class="btn">AR</a>
+          
+        </div>
+        
+        <br>
+        <p>AR experience with image tracking for the Sofia logo. Scanning the logo activates an effect that displays an animated virtual composition in real time. This personalized experience seamlessly merges the physical world of the logo with a virtual dimension.</p>
+        
+        <p class="hashtag">#Freelance #Blender #SparkAR</p>
+          
+        </div>
+      
+    <video  width="50%" height="auto" style="margin-left:15px;" controls poster="https://cdn.glitch.global/afe710b0-fea5-4b58-94c5-6810aff501a8/Snapinsta.jpg?v=1705557741905">
+    <source src="https://cdn.glitch.global/afe710b0-fea5-4b58-94c5-6810aff501a8/Snapinsta.app_video_734293766D36953BEB4DAED04ADBA28E_video_dashinit.mp4?v=1705553328247" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+        
+       </div>
+      
+      
+      
+     
+      
+    
+      
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+    
+    
+     
+      
+    
+    
+    
+       
+ 
+    
+  
+
+
+
+
+
+
+
+
+  </body>
+  
+  
+ 
+
+
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,194 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+body{
+  margin:0;
+  padding: 0;
+  font-family: 'PT Mono', monospace;
+  font-size: 14px;
+
+  background: #ffffff;
+  line-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  color: #000000;
+}
+
+header{
+  background: red;
+
+
+}
+
+p{
+  font-family: 'PT Mono', monospace;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  color: black;
+  letter-spacing: -0.2px;
+
+}
+
+pre{
+  font-family: 'PT Mono', monospace;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 32px;
+  color: black;
+}
+
+
+.main{
+  background: white;
+  display: flex;
+  min-height: 100vh;
+  height: 150px;
+
+
+}
+
+.Bar1, Bar2{
+  width: 50%;
+
+}
+
+
+.Bar1 {
+  position: relative;
+  overflow-y:auto;
+  padding: 60px;
+
+
+
+}
+
+.Bar1_inner{
+  color: #000000;
+
+
+}
+
+.hello{
+  font-family: 'PT Mono', monospace;
+  font-size: 14px;
+  line-height: 20px;
+  color: black;
+}
+
+
+.links{
+  color: #000000;
+  font-weight: bold;
+}
+
+.links_redes{
+  color: #000000;
+  text-decoration: none;
+
+}
+
+.trabajos{
+  color: #000000;
+  font-weight: bold;
+
+}
+
+
+
+
+.Bar2{
+ width: 100%;
+
+
+}
+
+.aframe{
+  display: block;
+  border: 0;
+}
+
+@media screen and (max-width: 900px){
+    main{
+      flex-direction: column-reverse;
+    }
+
+   .trabajos {
+        display: none; /* Oculta todos los enlaces dentro de la botonera */
+    }
+
+    .sol{
+      display: none;
+    }
+
+    .botonera a{
+    font-size: 13px;
+    letter-spacing: -0.3px;
+    }
+
+
+  Bar1, Bar2{
+    width: 100%;
+    min-height: 50vh;
+  }
+
+  .Bar1 {
+   padding: 30px;
+   width: auto;
+  }
+
+  .Bar2 {
+
+   height: 40vh;
+
+  }
+}
+
+.header-container {
+    align-items: center;
+  position: fixed; /* Hacemos el contenedor del encabezado fijo */
+  width: 100%; /* Ancho completo */
+  top: 0; /* Pegamos el contenedor en la parte superior */
+  z-index: 1000; /* Aseguramos que el contenedor esté por encima de otros elementos */
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agregamos una sombra para destacar el contenedor */
+
+
+}
+
+
+.logo {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: white;
+}
+
+.logo-img {
+
+    height: 52px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: white;
+}
+
+.movilelink {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 700px) {
+    .header-container {
+        display: none;
+    }
+}
+
+
+.botonera a{
+
+  letter-spacing: -0.3px;
+
+}
