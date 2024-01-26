@@ -43,36 +43,6 @@ a{
 
 }
 
-@media screen and (max-width: 700px){
-
-  nav{
-    display: none;
-  }
-
-  .back {
-        display: block; /* Otra opción podría ser 'display: flex;' o 'display: inline-block;' según tus necesidades */
-    }
-
-
-
-}
-
-
-@media screen and (min-width: 701px) {
-    /* Estilos que se aplicarán solo cuando la pantalla sea mayor a 700px */
-    .back {
-        display: none;
-    }
-
-
-
-
-}
-
-
-
-
-
 .card-container{
   display:flex;
   justify-content: center;
@@ -212,8 +182,8 @@ p{
 }
 
 .popup-content {
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 100%;
+  max-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -221,8 +191,8 @@ p{
 
 .popup-content img {
 
-  width: 100%;
-  height: 70%;
+  width: 65%;
+  height: 65%;
   object-fit: contain;
 }
 
@@ -254,4 +224,42 @@ border: 2px solid transparent; /* Agrega un borde transparente por defecto */
 
 .additional-images img:hover {
 border-color: #3498db; /* Cambia el color del borde cuando el mouse está sobre la imagen */
+}
+
+
+@media screen and (max-width: 700px){
+
+  nav{
+    display: none;
+  }
+
+  .back {
+        display: block; /* Otra opción podría ser 'display: flex;' o 'display: inline-block;' según tus necesidades */
+    }
+
+    .popup-content img {
+      width: 90%;
+      height: 90%;
+      
+    }
+
+
+
+}
+
+
+
+
+@media screen and (min-width: 701px) {
+    /* Estilos que se aplicarán solo cuando la pantalla sea mayor a 700px */
+    .back {
+        display: none;
+    }
+
+   
+    
+
+
+
+
 }
