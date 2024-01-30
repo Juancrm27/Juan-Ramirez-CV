@@ -256,10 +256,10 @@ border-color: #3498db; /* Cambia el color del borde cuando el mouse está sobre 
         display: none;
     }
 
-   
-    
+}
 
-
-
-
+@media screen and (min-width: 1680px) {
+  .card {
+    width: 410px;
+  }
 }
