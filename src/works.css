@@ -1,16 +1,15 @@
-*{
+* {
   margin: 0px;
-  padding:0px;
+  padding: 0px;
   box-sizing: border-box;
-
 }
 
-body{
+body {
   font-family: 'PT Mono', monospace;
   font-size: 14px;
 }
 
-header{
+header {
   display: flex;
   height: 50px;
   background-color: white;
@@ -18,77 +17,74 @@ header{
   align-items: center;
   padding: 10px;
   margin-bottom: -10px;
-  position: fixed; /* Hacemos el encabezado fijo */
-  width: 100%; /* Ancho completo */
-  top: 0; /* Pegamos el encabezado en la parte superior */
-  z-index: 1000; /* Aseguramos que el encabezado esté por encima de otros elementos */
-
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid black;
 }
 
-a{
-  text-decoration:none;
+a {
+  text-decoration: none;
   color: black;
 }
 
-.logo{
+.logo {
   font-size: 10px;
   display: flex;
   align-items: center;
 }
 
-.logo img{
+.logo img {
   height: 45px;
   margin-right: 6px;
   margin-left: 8px;
-
 }
 
-.card-container{
-  display:flex;
+.card-container {
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 46px;
-  justify-content: flex-start;
-
 }
 
-.card{
-  width: 420px;
+.card {
+  display: flex;
+  flex-direction: row;
+  width: 800px; /* Largo de la tarjeta */
   height: auto;
-  border-top: 1px solid black;
   overflow: hidden;
-  margin:4px;
-
-
+  margin: 4px;
+  padding-top: 10px;
+  border-top: 1px solid black;
 }
 
-.card img{
-  width: 80%;
+.card-content {
+  width: 20%; /* 20% del ancho de la tarjeta */
+  padding: 14px;
+}
+
+.blue-space {
+  width: 40%; /* 50% del ancho de la tarjeta */
+  background-color: white;
+}
+
+.rest-of-card {
+  width: 40%; /* 30% del ancho de la tarjeta */
+  padding: 14px;
+}
+
+.card img {
+  width: 70%;
   height: auto;
-  margin-left:15px;
-
-
-
+  margin-left: 15px;
 }
 
-
-.card-content{
-  padding:14px;
-  margin-bottom: -8px; /* Cambia -8px a 0px */
-
-
-}
-
-
-
-
-.card-content p{
-  color:black;
+.card-content p {
+  color: black;
   font-size: 12px;
-  line-height:1.5;
-
+  line-height: 1.5;
 }
-
 
 .titulocard {
   display: flex;
@@ -96,79 +92,68 @@ a{
   align-items: center;
 }
 
-.tituloproyecto{
+.tituloproyecto {
   font-size: 14px;
   font-weight: bold;
   text-decoration: underline;
 }
 
-.btn{
-
+.btn {
   font-size: 12px;
   color: red;
   border: 1px solid red;
-  padding:3px 10px;
+  padding: 3px 10px;
   border-radius: 20px;
   margin-left: auto;
   text-decoration: none;
 }
 
-.trabajos{
+.trabajos {
   color: #000000;
   text-decoration: underline;
   font-weight: bold;
 }
 
-.back{
+.back {
   text-decoration: underline;
   font-weight: bold;
 }
 
-.hashtag{
+.hashtag {
   font-weight: bold;
 }
 
-p{
+p {
   margin-bottom: 8px;
 }
 
 @media only screen and (max-width: 767px) {
-    .mobile-hover {
-        opacity: 1; /* Asegúrate de que el video sea visible inicialmente */
-        transition: opacity 0.3s ease; /* Transición suave para el efecto hover */
-    }
+  .mobile-hover {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
 
-    .mobile-hover:hover {
-        opacity: 0.7; /* Cambia la opacidad en hover */
-    }
+  .mobile-hover:hover {
+    opacity: 0.7;
+  }
 }
 
-/* Estilos del botón */
 .more-images-btn {
   font-family: 'PT Mono', monospace;
   font-size: 11px;
   background-color: white;
-  color: #007BFF;
+  color: #007bff;
   padding: 7px 10px;
-  border: 1px solid #007BFF;
+  border: 1px solid #007bff;
   border-radius: 20px;
   cursor: pointer;
-  margin-left: 14px; /* Alinea el botón a la izquierda */
+  margin-left: 14px;
   margin-top: 8px;
   margin-bottom: 4px;
-
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Cambia los estilos al pasar el mouse sobre el botón
-  font-family: 'PT Mono', monospace;
-  background-color: grey;
-  color: #0056b3;
-  border-color: #0056b3;
-}
- */
-
- .popup-container {
+.popup-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -190,7 +175,6 @@ p{
 }
 
 .popup-content img {
-
   width: 65%;
   height: 65%;
   object-fit: contain;
@@ -204,62 +188,84 @@ p{
   padding: 10px;
   cursor: pointer;
   border: none;
-  background-color: #000000; /* Puedes ajustar el color de fondo según tus preferencias */
-  color: rgb(190, 190, 190); /* Puedes ajustar el color del texto según tus preferencias */
+  background-color: #000000;
+  color: rgb(190, 190, 190);
   border-radius: 100%;
-  width: 35px; /* Ajusta el ancho al mismo valor que la altura para hacerlo circular */
-  height: 35px; /* Ajusta la altura al mismo valor que el ancho para hacerlo circular */
+  width: 35px;
+  height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
-
-
-
 }
 
 .additional-images img {
-cursor: pointer;
-border: 2px solid transparent; /* Agrega un borde transparente por defecto */
+  cursor: pointer;
+  border: 2px solid transparent;
 }
 
 .additional-images img:hover {
-border-color: #3498db; /* Cambia el color del borde cuando el mouse está sobre la imagen */
+  border-color: #3498db;
 }
 
-
-@media screen and (max-width: 700px){
-
-  nav{
+@media screen and (max-width: 700px) {
+  nav {
     display: none;
   }
 
   .back {
-        display: block; /* Otra opción podría ser 'display: flex;' o 'display: inline-block;' según tus necesidades */
-    }
+    display: block;
+  }
 
-    .popup-content img {
-      width: 90%;
-      height: 90%;
-      
-    }
-
-
-
+  .popup-content img {
+    width: 90%;
+    height: 90%;
+  }
 }
-
-
-
 
 @media screen and (min-width: 701px) {
-    /* Estilos que se aplicarán solo cuando la pantalla sea mayor a 700px */
-    .back {
-        display: none;
-    }
-
+  .back {
+    display: none;
+  }
 }
 
-@media screen and (min-width: 1680px) {
+@media screen and (min-width: 1024px) {
+  .card-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .card {
-    width: 410px;
+    width: 100%;
+    max-width: auto;
+    margin-right: auto;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  /* Estilos para dispositivos móviles */
+  body {
+    font-size: 12px; /* Tamaño de fuente más pequeño para dispositivos móviles */
+  }
+
+  .card {
+    width: 100%; /* Ancho completo para dispositivos móviles */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alineado a la izquierda */
+    
+
+
+  }
+
+  .card-content,
+  .rest-of-card {
+    width: 100%; /* Ancho completo para los elementos de la tarjeta en dispositivos móviles */
+    
+  }
+
+  .rest-of-card {
+    margin-left: -12px; /* Ajustar el margen izquierdo a 0 */
+    margin-top: -20px; /* Ajustar el margen izquierdo a 0 */
   }
 }
