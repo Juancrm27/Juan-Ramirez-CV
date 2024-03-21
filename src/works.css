@@ -74,11 +74,7 @@ a {
   padding: 14px;
 }
 
-.card img {
-  width: 70%;
-  height: auto;
-  margin-left: 15px;
-}
+
 
 .card-content p {
   color: black;
@@ -253,9 +249,6 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Alineado a la izquierda */
-    
-
-
   }
 
   .card-content,
@@ -268,4 +261,35 @@ p {
     margin-left: -12px; /* Ajustar el margen izquierdo a 0 */
     margin-top: -20px; /* Ajustar el margen izquierdo a 0 */
   }
+
+  .links {
+    display: inline-block;
+    margin-top: 10px; /* Ajusta según sea necesario */
+  }
 }
+
+
+.blue-space {
+  position: relative;
+}
+
+.blue-space-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  color: rgb(0, 0, 0);
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: bold; /* Agregamos negrita */
+
+}
+
+/* Media query para dispositivos móviles */
+@media only screen and (max-width: 700px) {
+  /* Estilos solo para el enlace de contacto */
+  .links {
+    display: inline; /* Asegurar que el enlace esté visible */
+  }
+}
+
