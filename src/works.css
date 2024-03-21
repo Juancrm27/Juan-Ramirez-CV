@@ -60,12 +60,12 @@ a {
 }
 
 .card-content {
-  width: 20%; /* 20% del ancho de la tarjeta */
+  width: 24%; /* 20% del ancho de la tarjeta */
   padding: 14px;
 }
 
 .blue-space {
-  width: 40%; /* 50% del ancho de la tarjeta */
+  width: 36%; /* 50% del ancho de la tarjeta */
   background-color: white;
 }
 
@@ -138,9 +138,9 @@ p {
   font-family: 'PT Mono', monospace;
   font-size: 11px;
   background-color: white;
-  color: #007bff;
+  color: #000000;
   padding: 7px 10px;
-  border: 1px solid #007bff;
+  border: 1px solid #000000;
   border-radius: 20px;
   cursor: pointer;
   margin-left: 14px;
@@ -285,11 +285,5 @@ p {
 
 }
 
-/* Media query para dispositivos móviles */
-@media only screen and (max-width: 700px) {
-  /* Estilos solo para el enlace de contacto */
-  .links {
-    display: inline; /* Asegurar que el enlace esté visible */
-  }
-}
+
 
