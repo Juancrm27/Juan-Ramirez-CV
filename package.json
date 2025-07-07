@@ -11,5 +11,8 @@
   "devDependencies": {
     "vite": "^5.0.8",
     "vite-plugin-glsl": "^1.2.1"
+  },
+  "dependencies": {
+    "three": "^0.178.0"
   }
 }
