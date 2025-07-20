@@ -108,66 +108,65 @@
    
 
     <div class="card-container">
+
+
+       <!-- Test-->
+
+<div class="card full-width gallery-layout">
+    <!-- Columna izquierda: texto -->
+    <div class="card-content">
+
+      <div class="titulocard">
+        <a href="https://www.instagram.com/reel/C2yEX6srmfp/" class="tituloproyecto">Comedy Night Market</a>
+        <a href="#" class="btn">VR</a>
+      </div>
+      
+      <br />
+
+      <p>
+        As a UI Designer at 3Dar, I contributed to the Comedy Night Market project for <a href="https://horizon.meta.com/world/261401370244630" target="_blank" class="links" style="text-decoration: underline;" >Meta Horizon Worlds</a>, crafting game interfaces and textures for 2D and 3D materials. The project involved creating a VR amusement fair-style space with various games where users earn tickets, redeemable for avatar accessories.
+      </p>
+
+      <p class="hashtag">#Unity #UI #VR #3Dar</p>
+    </div>
+
+    <!-- Columna derecha: galería -->
+    <div class="rest-of-card gallery-zone">
+
+      <div class="media-gallery-wrapper">
+        <div class="media-gallery" id="gallery">
+          <div class="gallery-item">
+            <video src="/src/assets/comedy_night_market/comedy_night_market.mp4" controls poster="/src/assets/comedy_night_market/comedy_night_market.jpg"></video>
+          </div>
+          <div class="gallery-item"><img src="/src/assets/comedy_night_market/Horizon World_7.jpg" alt="Horizon 7" /></div>
+          <div class="gallery-item"><img src="/src/assets/comedy_night_market/Horizon World_8.jpg" alt="Horizon 8" /></div>
+          <div class="gallery-item"><img src="/src/assets/comedy_night_market/Horizon World_9.jpg" alt="Horizon 9" /></div>
+          <div class="gallery-item"><img src="/src/assets/comedy_night_market/Horizon World_10.jpg" alt="Horizon 10"/></div>
+          <div class="gallery-item"><img src="/src/assets/comedy_night_market/Horizon World_11.jpg" alt="Horizon 11"/></div>
+          <div class="gallery-item"><img src="/src/assets/comedy_night_market/Horizon World_1.jpg" alt="Horizon 1" /></div>
+          <div class="gallery-item"><img src="/src/assets/comedy_night_market/Horizon World_2.jpg" alt="Horizon 2" /></div>
+          <div class="gallery-item"><img src="/src/assets/comedy_night_market/Horizon World_5.jpg" alt="Horizon 5" /></div>
+          <div class="gallery-item"><img src="/src/assets/comedy_night_market/Horizon World_6.jpg" alt="Horizon 6" /></div>
+        </div>
+
+        <!-- Botones -->
+        <div class="slider-buttons">
+          <button class="scroll-btn" onclick="scrollGallery(-1)">‹</button>
+          <button class="scroll-btn" onclick="scrollGallery(1)">›</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+      
+    
+
+  
       
     
       
-    <!-- 3DARCOMEDY-->
-      <div class="card" style="border-top: none;">
-        
-        <div class="card-content">
-        
-        <div class="titulocard">
-          
-          <a href="https://www.instagram.com/reel/C2yEX6srmfp/?igsh=MTh1a2V1MHFhemFtMA%3D%3D" class="tituloproyecto" >Comedy Night Market</a>
-          <a href="" class="btn">VR</a>
-          
-        </div>
-        
-        <br>
-        <p>As a UI Designer at 3Dar, I contributed to the Comedy Night Market project for <a href="https://horizon.meta.com/world/261401370244630" target="_blank" class="links" style="text-decoration: underline;">Meta Horizon Worlds,</a> crafting game interfaces and textures for 2D and 3D materials. The project involved creating a VR amusement fair-style space with various games where users earn tickets, redeemable for avatar accessories.</p>
-        
-        <p class="hashtag">#Unity #UI #VR #3Dar</p>
-          
-        </div>
-
-         
-        <div class="rest-of-card">
-        
-        
-        <video width="60%" height="auto" style="margin-left:12px;" controls poster="/src/assets/comedy_night_market/comedy_night_market.jpg" controls>
-        <source src="/src/assets/comedy_night_market/comedy_night_market.mp4" type="video/mp4" loading="lazy">
-        Your browser does not support the video tag.
-        </video>
-
-        <br>
-      
-        <!-- Agrega el botón dentro de la tarjeta -->
-        <button class="more-images-btn">More Images</button>
-        
-        <!-- Agrega un contenedor para las imágenes adicionales (puedes ocultarlo por defecto) -->
-        <div class="additional-images" style="display: none;">
-        <!-- Aquí coloca las imágenes adicionales -->
-        <img src="/src/assets/comedy_night_market/Horizon World_3.jpg" alt="Additional Image 1" style="width: 30%; margin-right: -20px;" loading="lazy">
-        <img src="/src/assets/comedy_night_market/Horizon World_2.jpg" alt="Additional Image 2" style="width: 30%; margin-right: -20px;" loading="lazy">
-        <img src="/src/assets/comedy_night_market/Horizon World_1.jpg" alt="Additional Image 3" style="width: 30%; margin-right: -20px;" loading="lazy">
-        <img src="/src/assets/comedy_night_market/Horizon World_5.jpg" alt="Additional Image 4" style="width: 30%; margin-right: -20px;" loading="lazy">
-        <img src="/src/assets/comedy_night_market/Horizon World_6.jpg" alt="Additional Image 5" style="width: 30%; margin-right: -20px;" loading="lazy">
-        <!-- ... más imágenes ... -->
-        </div> 
-
-        
-
-      </div>
-
-      <div class="blue-space">
-        <div class="blue-space-text">#127</div>
-      </div>
-
-        
-        
-       </div>
-      
-      
+   
       
       
       <!-- SARKANY-->
@@ -1285,17 +1284,26 @@
         
       
     
-      
+             <script>
+    function scrollGallery(direction) {
+      const gallery = document.getElementById('gallery');
+      const scrollAmount = 400;
+      gallery.scrollBy({
+        left: direction * scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  </script>
  
     
     
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+</body>
+
     
     
     

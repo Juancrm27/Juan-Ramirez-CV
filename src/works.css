@@ -287,3 +287,168 @@ p {
 
 
 
+/* test */
+
+.card.full-width {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.gallery-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+/* BLOQUE 1: TEXTO */
+.card-content {
+  width: 100%;
+  max-width: 420px;
+  padding: 16px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.card-content p {
+  margin-bottom: 12px;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+/* BLOQUE 2: GALERÍA */
+.gallery-zone {
+  flex: 1;
+  position: relative;
+  padding-top: 16px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.blue-space-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.media-gallery-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.media-gallery {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 0 0 0px 0;
+}
+
+.media-gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-item {
+  flex: 0 0 auto;
+  height: 700px;
+  border-radius: 12px;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-item img,
+.gallery-item video {
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* BOTONES */
+.slider-buttons {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 3;
+}
+
+.scroll-btn {
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-btn:hover {
+  background: #f2f2f2;
+}
+
+/* ------------------------ */
+/* 📱 MOBILE ADAPTACIÓN     */
+/* ------------------------ */
+@media screen and (max-width: 753px) {
+  .gallery-layout {
+    flex-direction: column;
+  }
+
+  .card-content {
+    max-width: 100%;
+    width: 100%;
+    padding: 24px 16px 0 16px;
+  }
+
+
+
+  .card-content p a{
+    font-family: 'PT Mono', monospace;
+    margin-bottom: 10px;
+    line-height: 2px;
+    word-break: break-word;
+  }
+
+  .gallery-zone {
+    max-width: 100%;
+    padding-left: 28px;
+    padding-right: 0;
+    padding-top: 0px;
+  }
+
+  .media-gallery {
+    padding-left: 0;
+    padding-right: 0;
+    gap: 12px;
+  }
+
+  .gallery-item {
+    height: 490px;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gallery-item img,
+  .gallery-item video {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .slider-buttons {
+    bottom: 16px;
+    right: 10px;
+  }
+}
