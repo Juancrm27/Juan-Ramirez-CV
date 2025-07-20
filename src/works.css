@@ -431,7 +431,7 @@ p {
   .gallery-zone {
     max-width: 100%;
     padding-left: 28px;
-    padding-right: 0;
+    padding-right: 0px;
     padding-top: 0;
   }
 
