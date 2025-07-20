@@ -288,8 +288,6 @@ p {
 
 
 /* test */
-
-/* Layout general */
 .card.full-width {
   width: 100%;
   padding: 0;
@@ -384,6 +382,7 @@ p {
 
 .scroll-btn {
   background: white;
+  color: black;
   border: none;
   border-radius: 50%;
   width: 42px;
@@ -396,6 +395,7 @@ p {
 
 .scroll-btn:hover:not(:disabled) {
   background: #f2f2f2;
+  color: black;
 }
 
 .scroll-btn:disabled {
@@ -403,6 +403,8 @@ p {
   cursor: not-allowed;
   pointer-events: none;
   filter: grayscale(100%);
+  background: white;
+  color: black;
 }
 
 /* ------------------------ */
@@ -416,7 +418,7 @@ p {
   .card-content {
     max-width: 100%;
     width: 100%;
-    padding: 24px 16px 0 16px; /* espacio arriba */
+    padding: 24px 16px 0 16px;
   }
 
   .card-content p a {
@@ -430,7 +432,7 @@ p {
     max-width: 100%;
     padding-left: 28px;
     padding-right: 0;
-    padding-top: 0px;
+    padding-top: 0;
   }
 
   .media-gallery {
@@ -464,6 +466,13 @@ p {
     width: 38px;
     height: 38px;
     font-size: 20px;
+    background: white;
+    color: black;
+  }
+
+  .scroll-btn:disabled {
+    background: white;
+    color: black;
+    opacity: 0.4;
   }
 }
-
