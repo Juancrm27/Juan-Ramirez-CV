@@ -120,7 +120,7 @@
         <a href="https://www.instagram.com/reel/C2yEX6srmfp/" class="tituloproyecto">Comedy Night Market</a>
         <a href="#" class="btn">VR</a>
       </div>
-      
+
       <br />
 
       <p>
@@ -150,10 +150,10 @@
         </div>
 
         <!-- Botones -->
-        <div class="slider-buttons">
-          <button class="scroll-btn" onclick="scrollGallery(-1)">‹</button>
-          <button class="scroll-btn" onclick="scrollGallery(1)">›</button>
-        </div>
+       <div class="slider-buttons">
+       <button class="scroll-btn prev" onclick="scrollGallery(-1)">‹</button>
+       <button class="scroll-btn next" onclick="scrollGallery(1)">›</button>
+       </div>
       </div>
     </div>
   </div>
@@ -1284,18 +1284,45 @@
         
       
     
-             <script>
-    function scrollGallery(direction) {
-      const gallery = document.getElementById('gallery');
-      const scrollAmount = 400;
-      gallery.scrollBy({
-        left: direction * scrollAmount,
-        behavior: 'smooth'
-      });
-    }
-  </script>
- 
-    
+            <script>
+  function updateScrollButtons() {
+    const gallery = document.getElementById('gallery');
+    const prevBtn = document.querySelector('.scroll-btn.prev');
+    const nextBtn = document.querySelector('.scroll-btn.next');
+
+    const scrollLeft = Math.ceil(gallery.scrollLeft);
+    const scrollMax = Math.ceil(gallery.scrollWidth - gallery.clientWidth);
+
+    const tolerance = 15; // importante para mobile con dedos
+
+    prevBtn.disabled = scrollLeft <= tolerance;
+    nextBtn.disabled = scrollLeft >= scrollMax - tolerance;
+  }
+
+  function scrollGallery(direction) {
+    const gallery = document.getElementById('gallery');
+    const item = gallery.querySelector('.gallery-item');
+    const gap = parseInt(getComputedStyle(gallery).gap) || 20;
+    const itemWidth = item.offsetWidth + gap;
+
+    gallery.scrollBy({
+      left: direction * itemWidth,
+      behavior: 'smooth'
+    });
+
+    // Actualizar luego del scroll animado
+    setTimeout(updateScrollButtons, 400);
+  }
+
+  // Init
+  window.addEventListener('load', () => {
+    updateScrollButtons();
+    document.getElementById('gallery').addEventListener('scroll', updateScrollButtons);
+  });
+</script>
+
+
+
     
 
 

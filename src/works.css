@@ -289,6 +289,7 @@ p {
 
 /* test */
 
+/* Layout general */
 .card.full-width {
   width: 100%;
   padding: 0;
@@ -312,7 +313,7 @@ p {
 
 .card-content p {
   margin-bottom: 12px;
-  line-height: 1.5;
+  line-height: 1.6;
   word-break: break-word;
 }
 
@@ -344,13 +345,14 @@ p {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   gap: 20px;
-  padding: 0 0 0px 0;
+  padding: 0 0 0 0;
 }
 
 .media-gallery::-webkit-scrollbar {
   display: none;
 }
 
+/* Elementos de la galería */
 .gallery-item {
   flex: 0 0 auto;
   height: 700px;
@@ -389,10 +391,18 @@ p {
   font-size: 22px;
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
-.scroll-btn:hover {
+.scroll-btn:hover:not(:disabled) {
   background: #f2f2f2;
+}
+
+.scroll-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+  filter: grayscale(100%);
 }
 
 /* ------------------------ */
@@ -406,12 +416,10 @@ p {
   .card-content {
     max-width: 100%;
     width: 100%;
-    padding: 24px 16px 0 16px;
+    padding: 24px 16px 0 16px; /* espacio arriba */
   }
 
-
-
-  .card-content p a{
+  .card-content p a {
     font-family: 'PT Mono', monospace;
     margin-bottom: 10px;
     line-height: 2px;
@@ -447,34 +455,15 @@ p {
     border-radius: 12px;
   }
 
-
-  .scroll-btn {
-  background: white;
-  border: none;
-  border-radius: 50%;
-  width: 42px;
-  height: 42px;
-  font-size: 22px;
-  cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  }
-
   .slider-buttons {
     bottom: 16px;
     right: 10px;
   }
 
   .scroll-btn {
-  background: white;
-  border: none;
-  border-radius: 50%;
-  width: 42px;
-  height: 42px;
-  font-size: 22px;
-  cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 38px;
+    height: 38px;
+    font-size: 20px;
+  }
 }
 
-
-
-}
