@@ -8,7 +8,8 @@ export default defineConfig({
                 aframe: 'aframe.html',
                 works: 'works.html',
                 graphicdesigner: 'graphicdesigner.html',
-                '3dartist': '3dartist.html' 
+                '3dart': '3dart.html',
+                '3dartist': '3dartist.html'
             }
         }
     }
